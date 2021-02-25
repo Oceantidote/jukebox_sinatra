@@ -1,0 +1,23 @@
+<!-- <h2>Artists</h2> -->
+
+<%# @names.each do |artist_info| %>
+  <!-- <li>
+    <a href="/artists/<%#= artist_info[1]%>"><%#= artist_info[0] %></a>
+  </li> -->
+<%# end %>
+
+
+<ol>
+  <% @names.each do |artist| %>
+    <li>
+      <a href="/artists/<%= artist[1] %>"><%= artist[0] %></a>
+    </li>
+  <% end %>
+</ol>
+
+
+<!-- er <% %>  INVISIBLE used for running logic -->
+
+<!-- pe <%= %> VISIBLE when we want to inject ruby variables into html and for it to be visible-->
+
+
